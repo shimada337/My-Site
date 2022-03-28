@@ -5,6 +5,7 @@
 }
 
 header {
+  width: 100%;
   height: 70px;
   background-color: #ec715f;
 }
@@ -41,6 +42,7 @@ a {
 }
 
 #mv {
+  width: 100%;
   text-align: center;
   color: #fafafa;
   height: 650px;
@@ -52,11 +54,13 @@ a {
 .mv-title {
   padding-top: 200px;
   font-size: 64px;
+  color: #fafafa;
 }
 
 .mv-text {
   font-size: 20px;
-  padding: 10px;
+  padding-top: 10px;
+  color: #fafafa;
 }
 
 #portfolio {
@@ -89,6 +93,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 30px 0 90px 0;
+  margin: 0 auto;
 }
 
 .production {
@@ -197,6 +202,7 @@ a {
 
 .link-text {
   color: black;
+  text-decoration: underline;
 }
 
 .description {
@@ -223,6 +229,7 @@ a {
 }
 
 footer {
+  width: 100%;
   height: 70px;
   background-color: #ec715f;
 }
@@ -232,4 +239,123 @@ footer {
   text-align: center;
   line-height: 70px;
   color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    height: 40px;
+    width: 40px;
+    margin-right: 5%;
+    border: 1px solid #fafafa;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;
+    line-height: 50px;
+  }
+
+  #mv {
+    background-image: url(img/code.png);
+  }
+
+  .mv-title {
+    font-size: 40px;
+  }
+
+  .mv-text {
+    font-size: 18px;
+  }
+
+  .production-group {
+    width: 300px;
+  }
+
+  .production {
+    margin-right: 0;
+  }
+
+  .bg-1 {
+    display: none;
+  }
+
+  .bg-3 {
+    display: none;
+  }
+
+  .bg-5 {
+    display: none;
+  }
+
+  .strength-group {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .strength {
+    padding-top: 10px;
+  }
+
+  .profile-group {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .profile-group .left-content {
+    margin-bottom: 20px;
+  }
+
+  .contact-group {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .contact-group .left-content {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    height: 60px;
+  }
+
+  .copyright {
+    line-height: 60px;
+  }
 }
